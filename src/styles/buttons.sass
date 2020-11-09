@@ -1,0 +1,43 @@
+[class*="btn-"]
+    text-align: center
+    vertical-align: middle
+    cursor: pointer
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    font-weight: 100
+    border: 1px solid transparent
+    padding: .60rem 1.50rem
+    font-size: 1.3rem
+    font-family: "Lato", sans-serif, Arial, Helvetica !important
+    line-height: 1.5
+    border-radius: .1rem
+    transition: color .55s ease-in-out,background-color .55s ease-in-out,border-color .55s ease-in-out,box-shadow .15s ease-in-out
+    
+
+button:focus  
+    outline: none 
+
+@mixin template-btn($bg-color, $txt-color, $name)
+    .btn-#{$name}
+        color: #{$txt-color}
+        background-color: #{$bg-color}
+        border-color: #{$bg-color}
+
+    .btn-#{$name}:hover
+        color: #{$txt-color}
+        background-color: darken($bg-color, 15%)
+        border-color:  darken($bg-color, 15%)
+     
+            
+
+
+@include template-btn($white,$gray-900,"white")
+@include template-btn($gray-600,$gray-900,"gray-lite")
+@include template-btn($gray-800,$white,"gray")
+@include template-btn($gray-900,$white,"black")
+@include template-btn($blue,$white,"blue")
+@include template-btn($red,$white,"red")
+@include template-btn($orange,$white,"orange")
+@include template-btn($purple,$white,"purple")
