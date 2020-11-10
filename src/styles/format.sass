@@ -38,7 +38,40 @@ $proc: 10%
         padding-top:  ($i*$range)
 
 @for $i from 1 through 10
-    .h-#{$i}
+    .h-#{$i}0
         height:  ($i*$proc)
-    .w-#{$i}
+    .w-#{$i}0
         width:  ($i*$proc)
+
+.m-auto
+    margin:  auto
+.ml-auto
+     margin-left:  auto
+.mr-auto
+    margin-right:  auto
+.mx-auto
+    margin-left:  auto
+    margin-right:  auto
+.mt-auto
+    margin-top: auto
+.mb-auto
+    margin-bottom:  auto
+.my-auto
+    margin-bottom:  auto
+    margin-top:  auto
+
+@mixin template-align($name)
+    .text-#{$name}
+        text-align: #{$name}
+
+@include template-align("left")
+@include template-align("center")
+@include template-align("right")
+
+@mixin template-text-color($name)
+    .text-#{$name}
+        color: #{$name}
+
+@include template-text-color("white")
+@include template-text-color("black")
+@include template-text-color("gray")

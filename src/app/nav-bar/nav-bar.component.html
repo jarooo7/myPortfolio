@@ -1,10 +1,13 @@
 <div id="nav-bar" [ngClass]="classBar">
-  <img class="logo mx-5" src="../../assets/logo.svg">
-  <a href="#home" class="active">strona główna</a>
+  <div>
+    <img class="logo mx-5" src="../../assets/logo.svg">
+  </div>
+  <a [routerLink]="['/home']" routerLinkActive="active">Strona główna</a>
   <a href="#news">O mnie</a>
-  <a href="#contact">W wolnym czasie</a>
-  <a href="#about">umiejetności</a>
-  <a href="#about">kontakt</a>
+  <a href="#contact">Projekty</a>
+  <a href="#about">Umiejetności</a>
+  <a href="#about">Kontakt</a>
+
   <a (click)="toggleMenu()" class="icon" >
     <i class="fa fa-bars"></i>
   </a>
