@@ -1,0 +1,62 @@
+.circle-container
+  $particleNum: 200 
+
+  position: absolute
+  transform: translateY(-10vh)
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+  .circle
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    mix-blend-mode: screen
+    background-image: radial-gradient(rgba(255,255, 255, .7), rgba(255,255, 255, .5), rgba(255,255, 255, 0.1))
+
+    animation: fadein-frames 200ms infinite, scale-frames 2s infinite
+
+    @keyframes fade-frames
+      0%
+        opacity: 1
+
+      50%
+        opacity: 0.7
+
+      100%
+        opacity: 1
+
+    @keyframes scale-frames
+      0%
+        transform: scale3d(0.4, 0.4, 1)
+
+      50%
+        transform: scale3d(1.2, 1.2, 1)
+
+      100%
+        transform: scale3d(0.4, 0.4, 1)
+
+  $particleBaseSize: 4 
+
+  @for $i from 1 through $particleNum
+    &:nth-child(#{$i})
+      $circleSize: random($particleBaseSize) 
+      width: $circleSize + px
+      height: $circleSize + px
+
+      $startPositionY: random(10) + 100 
+      $framesName: "move-frames-" + $i 
+      $moveDuration: 10000 + random(6000) + ms 
+
+      animation-name: #{$framesName}
+      animation-duration: $moveDuration
+      animation-delay: random(18000) + ms
+
+      @keyframes #{$framesName}
+        from
+          transform: translate3d( #{random(95) + vw}, #{random(100) + vh} , 0)
+
+        to
+          transform: translate3d( #{random(90) + vw} ,  #{ random(100) + vh}, 0 )
+
+      .circle
+        animation-delay: random(4000) + ms
