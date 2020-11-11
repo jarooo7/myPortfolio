@@ -6,6 +6,11 @@
   z-index: 10
   left: 0
   top:0
+  
+
+  .icon-nav
+    height: 17px
+    display: none
 
   .logo
     padding:5px
@@ -21,6 +26,7 @@
     padding: 20px 16px
     text-decoration: none
     font-size: 17px
+    transition: all 1s
 
     &.active
       color: white
@@ -28,11 +34,26 @@
       border-bottom: 3px solid white
 
     &:hover
-      background-color: #ddd
-      color: black
+      background-color: #2b2929
 
   .icon
     display: none
+
+@media screen and (max-width: 900px)
+  #nav-bar a
+    padding: 16px 16px
+    .icon-nav
+      display: inline
+      height: 25px
+    span
+      display: none
+    &.active
+      .icon-nav
+      padding-bottom: 13px
+      padding-left: 20px
+      padding-right: 20px
+
+    
 
 @media screen and (max-width: 600px)
   #nav-bar a
@@ -40,6 +61,7 @@
       display: none
 
     &.icon
+      padding: 20px 16px
       float: right
       display: block
 
@@ -49,7 +71,13 @@
     left: 0
     top:0
     
-    img
+    .icon-nav
+      display: none !important
+      height: 17px
+    span
+      display: inline !important
+    
+    .logo
       float: none
       display: block
 
