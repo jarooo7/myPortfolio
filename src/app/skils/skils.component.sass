@@ -1,0 +1,59 @@
+@import "../../styles/row-container.sass"
+@include template-row(photo1)
+@include template-row(photo3)
+
+.text-title2
+    font-size: 9vh
+
+@media (max-width: 600px) 
+    .text-title2
+        font-size: 6vh
+
+.bottom-line
+    border-bottom: 0.5vh solid rgba(255, 255, 255,0.2 )
+    animation: showLine 1s
+.animation-text-container
+    overflow: hidden
+
+    .animation-text-top1
+        position: relative
+        top: 24vh
+        animation: showTopText1 2s
+        animation-delay: .5s
+        animation-fill-mode: forwards
+
+    .animation-text-bottom1
+        position: relative
+        bottom: 15vh
+        animation: showBottomText1 3s
+        animation-delay: 2.5s
+        animation-fill-mode: forwards
+
+
+@keyframes showTopText1
+    0%
+        top: 22vh
+    50%, 60%
+        top: 10vh
+
+    100%
+        top: 0
+
+
+
+@keyframes showBottomText1
+    0%
+        bottom: 15vh
+    33%, 40%
+        bottom: 10vh
+    66%, 72%
+        bottom: 5vh
+    100%
+        bottom: 0
+
+
+@keyframes showLine
+    0%
+        opacity: 0
+    100%
+        opacity: 1

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss']
+  styleUrls: ['./about-me.component.sass']
 })
 export class AboutMeComponent implements OnInit {
 
@@ -12,4 +12,7 @@ export class AboutMeComponent implements OnInit {
   ngOnInit() {
   }
 
+  scroll(el) {
+    el.scrollIntoView();
+  }
 }
