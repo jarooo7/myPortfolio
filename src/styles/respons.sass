@@ -10,7 +10,7 @@ $size-col: (100%/12)
     flex-wrap: wrap
     overflow: hidden
 //columns
-@media (min-width: 1100px)    
+@media (min-width: 1154px)    
     @for $i from 1 through 12
         .col-min-#{$i}
             flex: 0 0 ($i*$size-col)
@@ -25,7 +25,7 @@ $size-col: (100%/12)
             flex: 0 0 ($i*$size-col)
             max-width: ($i*$size-col) 
 
-@media (max-width: 1100px) and (min-width: 1000px) 
+@media (max-width: 1154px) and (min-width: 1000px) 
     @for $i from 1 through 12
         .col-min-#{$i}
             flex: 0 0 ($i*$size-col)  !important

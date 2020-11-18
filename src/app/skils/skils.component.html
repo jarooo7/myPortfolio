@@ -1,30 +1,74 @@
 <div class="container" >
-  <div class="row row-black-photo1 text-white" id="page1">
+  <div class="row row-black-c-photo1 text-white mx-1" id="page1">
     <div *ngFor="let item of [].constructor(50)" class="circle-container">
       <div class="circle">
       </div>
     </div>
-    <div class="col-min-8 col-6 mx-auto">
-      <div class="my-auto  h-100 bg-text text-white text-center">
+    <div class="col-max-5 col-8 col-min-10  mx-auto">
+      <div class="my-auto  h-100 text-white text-center">
         <div class="mx-auto mt-6 text-container px-4">
           <div class="animation-text-container bottom-line">
             <div class="animation-text-top1">
-              <h3 class="text-title2">Moje umiejętności
-              </h3>
+              <h3 class="text-title2">Moje umiejętności</h3>
             </div>
           </div>
-          <!-- <div class="mx animation-text-container">
-            <div class="animation-text-bottom1">
-              <span>Kim jestem?<br>Czym się zajmuje i interesuje?</span>
+          <div class="mx animation-text-container">
+            <div class="animation-text-bottom1 text-skils">
+              <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia
+                in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper
+                justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero
+                dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est.
+                Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae
+                consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit
+                quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
             </div>
-          </div> -->
+          </div> 
         </div>
       </div>
     </div>
-    <a class="b-scroll-down"><span (click)="scroll(page2)"></span></a>
-  </div>
-  <div class="row row-white" #page2>
-    <div class="col-min-8 col-6 mx-auto">nnn</div>
-    xvccdvv
+    <div class=" col-max-7 hex-global-container mt-7 mb-8">
+      <div class="hex-group-1">
+        <app-hexagon [name]="'github'" [positonTop]="0" [positonRight]="0"></app-hexagon>
+        <app-hexagon [name]="'inkscape'" [positonTop]="90*scal" [positonRight]="60*scal"></app-hexagon>
+        <app-hexagon [name]="'augury'" [positonTop]="90*scal" [positonRight]="175*scal"></app-hexagon>
+        <app-hexagon [name]="'nodejs'" [positonTop]="180*scal" [positonRight]="0"></app-hexagon>
+        <app-hexagon [name]="'angular'" [positonTop]="270*scal" [positonRight]="60*scal"></app-hexagon>
+        <app-hexagon [name]="'cordova'" [positonTop]="360*scal" [positonRight]="0"></app-hexagon>
+        <app-hexagon [name]="'invision'" [positonTop]="450*scal" [positonRight]="60*scal "></app-hexagon>
+        <app-hexagon [name]="'firebase'" [positonTop]="270*scal" [positonRight]="175*scal "></app-hexagon>
+        <app-hexagon [name]="'gitlab'" [positonTop]="360*scal" [positonRight]="235*scal "></app-hexagon>
+        <app-hexagon [name]="'ionic'" [positonTop]="360*scal" [positonRight]="350*scal "></app-hexagon>
+        <app-hexagon [name]="'ts'" [positonTop]="450*scal" [positonRight]="410*scal "></app-hexagon>
+        <app-hexagon [name]="'csharp'" [positonTop]="540*scal" [positonRight]="350*scal "></app-hexagon>
+        <app-hexagon [name]="'tfs'" [positonTop]="540*scal" [positonRight]="235*scal "></app-hexagon>
+        <app-hexagon [name]="'dotnet'" [positonTop]="810*scal" [positonRight]="410*scal "></app-hexagon>
+        <app-hexagon [name]="'code'" [positonTop]="720*scal" [positonRight]="235*scal "></app-hexagon>
+        <app-hexagon [name]="'js'" [positonTop]="720*scal" [positonRight]="120*scal "></app-hexagon>
+        <app-hexagon [name]="'gimp'" [positonTop]="810*scal" [positonRight]="60*scal "></app-hexagon>
+        <app-hexagon [name]="'git'" [positonTop]="630*scal" [positonRight]="60*scal "></app-hexagon>
+      </div>
+      <div class="hex-group-2">
+
+        <app-hexagon [name]="'python'" [positonTop]="90*scal" [positonRight]="0*scal "></app-hexagon>
+        <app-hexagon [name]="'unity'" [positonTop]="0*scal" [positonRight]="60*scal "></app-hexagon>
+        <app-hexagon [name]="'css'" [positonTop]="180*scal" [positonRight]="60*scal "></app-hexagon>
+        <app-hexagon [name]="'bootstrap'" [positonTop]="180*scal" [positonRight]="175*scal "></app-hexagon>
+        <app-hexagon [name]="'php'" [positonTop]="270*scal" [positonRight]="115*scal "></app-hexagon>
+        <app-hexagon [name]="'ai'" [positonTop]="360*scal" [positonRight]="60*scal "></app-hexagon>
+        <app-hexagon [name]="'cplus'" [positonTop]="360*scal" [positonRight]="175*scal "></app-hexagon>
+        <app-hexagon [name]="'less'" [positonTop]="360*scal" [positonRight]="-55*scal "></app-hexagon>
+        <app-hexagon [name]="'mysql'" [positonTop]="450*scal" [positonRight]="235*scal "></app-hexagon>
+      </div>
+
+      <div class="hex-group-3">
+        <app-hexagon [name]="'laravel'" [positonTop]="180*scal" [positonRight]="0*scal "></app-hexagon>
+        <app-hexagon [name]="'html'" [positonTop]="270*scal" [positonRight]="60*scal "></app-hexagon>
+        <app-hexagon [name]="'c'" [positonTop]="90*scal" [positonRight]="60*scal "></app-hexagon>
+        <app-hexagon [name]="'core'" [positonTop]="0*scal" [positonRight]="0*scal "></app-hexagon>
+        <app-hexagon [name]="'sass'" [positonTop]="90*scal" [positonRight]="175*scal "></app-hexagon>
+        <app-hexagon [name]="'vs'" [positonTop]="180*scal" [positonRight]="235*scal "></app-hexagon>
+        <app-hexagon [name]="'postgres'" [positonTop]="180*scal" [positonRight]="350*scal "></app-hexagon>
+      </div>
+    </div>
   </div>
 </div>

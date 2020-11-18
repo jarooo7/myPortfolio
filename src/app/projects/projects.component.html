@@ -1,9 +1,9 @@
-<div class="container" >
-  <div class="row row-black-photo1 text-white" id="page1">
+<div class="container">
+  <div class="row row-black-photo1 text-white " id="page1">
     <div *ngFor="let item of [].constructor(50)" class="circle-container">
       <div class="circle"></div>
     </div>
-    <div class="col-min-8 col-6 mx-auto">
+    <div class="col-min-8 col-6 mx-auto ">
       <div class="my-auto  h-100 bg-text text-white text-center">
         <div class="mx-auto mt-6 text-container px-4">
           <div class="animation-text-container bottom-line">
@@ -19,10 +19,20 @@
         </div>
       </div>
     </div>
-    <a class="b-scroll-down"><span (click)="scroll(page2)"></span></a>
+
+    <a SimpleSmoothScroll [duration]="500" [scrollTo]="'page2'" class="b-scroll-down"><span></span></a>
   </div>
-  <div class="row row-white" #page2>
-    <div class="col-min-8 col-6 mx-auto">nnn</div>
-    xvccdvv
+  <div class="row row-white px-6 " id="page2">
+    <div class="col-max-4 mt-7">
+      <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia
+        in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper
+        justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero
+        dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est.
+        Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae
+        consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit
+        quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+    </div>
+    <div class=" col-max-8">
+    </div>
   </div>
 </div>

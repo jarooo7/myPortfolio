@@ -1,5 +1,5 @@
 <div class="container" >
-  <div class="row row-black-photo1 text-white" id="page1">
+  <div class="row row-black-photo3 text-white" id="page1">
     <div *ngFor="let item of [].constructor(50)" class="circle-container">
       <div class="circle"></div>
     </div>
@@ -19,14 +19,14 @@
         </div>
       </div>
     </div>
-    <a class="b-scroll-down"><span (click)="scroll(page2)"></span></a>
+    <a  SimpleSmoothScroll [duration]="500" [scrollTo]="'page2'" class="b-scroll-down"><span ></span></a>
   </div>
-  <div class="row row-white" #page2>
+  <div class="row row-white" id="page2">
     <div class="col-min-8 col-6 mx-auto">nnn</div>
     xvccdvv
   </div>
 
-  <div class="row row-black-photo3 text-white" #page3>
+  <div class="row row-black-photo3 text-white">
     <div *ngFor="let item of [].constructor(50)" class="circle-container">
       <div class="circle"></div>
     </div>
@@ -45,10 +45,10 @@
           </div>
         </div>
       </div>
-      <a class="b-scroll-down"><span></span></a>
+    <a  SimpleSmoothScroll [duration]="500" [scrollTo]="'page4'" class="b-scroll-down"><span ></span></a>
     </div>
   </div>
-  <div class="row row-white" #page4>
+  <div class="row row-white" id="page4">
   </div>
 
 

@@ -10,6 +10,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkilsComponent } from './skils/skils.component';
 import { ContactComponent } from './contact/contact.component';
+import { HexagonComponent } from './atoms-components/hexagon/hexagon.component';
+import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { ContactComponent } from './contact/contact.component';
     AboutMeComponent,
     ProjectsComponent,
     SkilsComponent,
-    ContactComponent
+    ContactComponent,
+    HexagonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SimpleSmoothScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
