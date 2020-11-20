@@ -1,0 +1,98 @@
+//main container
+
+$size-col: (100%/12)
+.container
+    margin-right: auto
+    margin-left: auto
+//row
+.row
+    display: flex
+    flex-wrap: wrap
+    overflow: hidden
+//columns
+@media (min-width: 1154px)    
+    @for $i from 1 through 12
+        .col-min-#{$i}
+            flex: 0 0 ($i*$size-col)
+            max-width: ($i*$size-col) 
+    @for $i from 1 through 12
+        .col-#{$i}
+            flex: 0 0 ($i*$size-col) 
+            max-width: ($i*$size-col) 
+
+    @for $i from 1 through 12
+        .col-max-#{$i}
+            flex: 0 0 ($i*$size-col)
+            max-width: ($i*$size-col) 
+
+@media (max-width: 1154px) and (min-width: 1000px) 
+    @for $i from 1 through 12
+        .col-min-#{$i}
+            flex: 0 0 ($i*$size-col)  !important
+            max-width: ($i*$size-col) !important
+
+    @for $i from 1 through 12
+        .col-#{$i}
+            flex: 0 0 ($i*$size-col)  !important
+            max-width: ($i*$size-col) !important
+
+    @for $i from 1 through 12
+        .col-max-#{$i}
+            flex: 0 0 100%
+            max-width: 100% 
+ 
+   
+@media (max-width: 1000px) and (min-width: 800px)   
+    @for $i from 1 through 12
+        .col-min-#{$i}
+            flex: 0 0 ($i*$size-col) !important
+            max-width: ($i*$size-col) !important
+    @for $i from 1 through 12
+        .col-#{$i}
+            flex: 0 0 100%
+            max-width: 100%
+
+    @for $i from 1 through 12
+        .col-max-#{$i}
+            flex: 0 0 100%
+            max-width: 100% 
+
+@media (max-width: 800px) and (min-width: 500px)
+    
+   
+    @for $i from 1 through 12
+        .col-min-#{$i}
+            flex: 0 0 100%
+            max-width: 100% 
+
+    @for $i from 1 through 12
+        .col-#{$i}
+            flex: 0 0 100%
+            max-width: 100%
+
+    @for $i from 1 through 12
+        .col-max-#{$i}
+            flex: 0 0 100%
+            max-width: 100% 
+
+
+@media (max-width: 500px)
+    
+    @for $i from 1 through 12
+        .col-min-#{$i}
+            flex: 0 0 100%
+            max-width: 100% 
+
+    @for $i from 1 through 12
+        .col-#{$i}
+            flex: 0 0 100%
+            max-width: 100%
+
+    @for $i from 1 through 12
+        .col-max-#{$i}
+            flex: 0 0 100%
+            max-width: 100% 
+
+[class*="col-"]
+    width: 100%
+    position: relative

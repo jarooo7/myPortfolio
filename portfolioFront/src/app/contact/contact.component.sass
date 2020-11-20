@@ -1,0 +1,161 @@
+@import "../../styles/row-container.sass"
+@import "../../styles/colors.sass"
+@include template-row(photo1)
+.bottom-line
+    border-bottom: 0.5vh solid rgba(255, 255, 255,0.2 )
+    animation: showLine 1s
+.animation-text-container
+    overflow: hidden
+
+    .animation-text-top
+        position: relative
+        top: 28vh
+        animation: showTopText 1s
+        animation-delay: .1s
+        animation-fill-mode: forwards
+    .animation-text-bottom
+        position: relative
+        bottom: 8vh
+        animation: showBottomText 1s
+        animation-delay: 1s
+        animation-fill-mode: forwards
+
+@keyframes showTopText
+    0%
+        top: 11vh
+    100%
+        top: 0
+
+@keyframes showBottomText
+    0%
+        bottom: 8vh
+    100%
+        bottom: 0
+
+@keyframes showLine
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+
+//// FORM
+.form
+    width: 400px
+    background-color: #2525256c
+    margin-top: 18vh
+    animation: bg-form 1s
+
+@keyframes bg-form
+    0% 
+        background-color: #00000000 
+    100%
+        background-color: #2525256c
+.g-1
+    animation: input-animation 1s 
+    animation-delay: 0.5s
+    animation-fill-mode: forwards
+.g-2
+    animation: input-animation 1s 
+    animation-delay: 1s
+    animation-fill-mode: forwards
+.g-3
+    animation: input-animation 1s 
+    animation-delay: 1.5s
+    animation-fill-mode: forwards
+.g-4
+    opacity: 0
+    animation: input-animation 1s 
+    animation-delay: 2s
+    animation-fill-mode: forwards
+
+.group
+  position: relative
+  opacity: 0
+
+  p
+      color: $red
+      padding: 0
+      font-size: 14px
+      visibility: hidden
+      text-align: left
+      margin-bottom: 15px
+
+  input, textarea
+    font-size: 18px
+    padding: 10px 10px 10px 5px
+    display: block
+    width: 400px
+    border: none
+    outline: none
+    border-bottom: 1px solid #B1B1B1
+    color: #B1B1B1
+    background: rgba(0, 0, 0, 0)
+    opacity: 0.5
+    transition: 0.2s ease
+
+    &:focus
+      outline: none
+      opacity: 1
+
+  label
+    color: #B1B1B1
+    font-size: 18px
+    font-weight: normal
+    position: absolute
+    pointer-events: none
+    left: 5px
+    top: 15px
+    opacity: 0.5
+    transition: 0.2s ease all
+    -moz-transition: 0.2s ease all
+    -webkit-transition: 0.2s ease all
+
+  input, textarea
+    &:focus ~ label, &:valid ~ label
+      top: -10px
+      font-size: 12px
+      color: #B1B1B1
+      opacity: 1
+
+textarea 
+  resize: none
+
+.error
+    color: $red !important
+    border-color: $red !important
+.error-com
+    visibility: visible  !important
+
+
+///////
+.bg-text-contact
+    font-family: "Lato-L", Helvetica, sans-serif !important
+    font-size: 4vh
+
+    h3
+        font-size: 10vh
+        margin: 0
+@keyframes input-animation
+    0%
+        position: relative
+        top: 80px
+        opacity: 0
+
+    99% 
+        position: relative
+        top:0 
+        opacity: 1    
+        
+    100%
+        position: none
+        
+        opacity: 1
+
+.field 
+    display: flex
+    width: 330px
+    justify-content: space-around
+    
+
+        

@@ -1,0 +1,111 @@
+@import "../../styles/row-container.sass"
+@include template-row(photo1)
+@include template-row(photo3)
+
+.text-title2
+    font-size: 6vh
+    margin: 0
+.text-skils
+    font-size: 15px
+
+
+.bottom-line
+    border-bottom: 0.5vh solid rgba(255, 255, 255,0.2 )
+    animation: showLine 1s
+.animation-text-container
+    overflow: hidden
+
+    .animation-text-top1
+        position: relative
+        top: 14vh
+        animation: showTopText1 1.5s
+        animation-delay: .1s
+        animation-fill-mode: forwards
+
+    .animation-text-bottom1
+        opacity: 0
+        animation: showBottomText1 3s
+        animation-delay: 1.5s
+        animation-fill-mode: forwards
+
+
+@keyframes showTopText1
+    0%
+        top: 14vh
+    50%, 60%
+        top: 6vh
+
+    100%
+        top: 0
+
+
+
+@keyframes showBottomText1
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+
+@keyframes showLine
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+
+/////////
+$scal: 0.65
+
+
+.hex-group-1
+    float: right
+    position: relative
+    width: 510px*$scal
+    height: 920px*$scal
+
+.hex-group-2
+    float: right
+    position: relative
+    top: 360px*$scal
+    width: 335px*$scal
+    height: 560px*$scal
+    margin-right: 10px*$scal
+
+.hex-group-3
+    top: 630px*$scal
+    float: right
+    position: relative
+    width: 50px*$scal
+    height: 380px*$scal
+    margin-right: 10px*$scal
+
+@media (max-width: 927px)
+    .hex-group-3   
+        top:0
+        margin-right: 72px*$scal
+        margin-top:-15px*$scal
+        width: 450px*$scal
+        
+    .hex-group-2   
+        top:0
+@media (max-width: 703px)
+    .hex-group-3   
+        top:0
+        margin-left: 10px
+        margin-right: 60px*$scal
+        margin-top: 80px*$scal
+        width: 450px*$scal
+
+@media (max-width: 618px)
+    .hex-group-2   
+        top:0
+        margin-right: 60px*$scal
+        margin-top: -15px*$scal 
+    .hex-group-3   
+        top:0
+        margin-left: 10px
+        margin-right: 60px*$scal
+        margin-top: -100px*$scal
+        margin-bottom: 115px*$scal
+        width: 450px*$scal

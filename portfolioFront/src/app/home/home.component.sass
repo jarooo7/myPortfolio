@@ -1,0 +1,45 @@
+@import "../../styles/row-container.sass"
+@include template-row(photo1)
+.bottom-line
+    border-bottom: 0.5vh solid rgba(255, 255, 255,0.2 )
+    animation: showLine 1s
+.animation-text-container
+    overflow: hidden
+
+    .animation-text-top
+        position: relative
+        top: 28vh
+        animation: showTopText 3s
+        animation-delay: .5s
+        animation-fill-mode: forwards
+    .animation-text-bottom
+        position: relative
+        bottom: 8vh
+        animation: showBottomText 1s
+        animation-delay: 4s
+        animation-fill-mode: forwards
+
+@keyframes showTopText
+    0%
+        top: 28vh
+
+    33%, 40%
+        top: 24vh
+    66%, 72%
+        top: 11vh
+
+    100%
+        top: 0
+
+@keyframes showBottomText
+    0%
+        bottom: 8vh
+    100%
+        bottom: 0
+
+@keyframes showLine
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+

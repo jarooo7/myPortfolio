@@ -1,0 +1,80 @@
+$range: 10px
+$proc: 10%
+
+@for $i from 1 through 8
+    .m-#{$i}
+        margin:  ($i*$range)
+    .ml-#{$i}
+        margin-left:  ($i*$range)
+    .mr-#{$i}
+        margin-right:  ($i*$range)
+    .mx-#{$i}
+        margin-left:  ($i*$range)
+        margin-right:  ($i*$range)
+    .mt-#{$i}
+        margin-top:  ($i*$range)
+    .mb-#{$i}
+        margin-bottom:  ($i*$range)
+    .my-#{$i}
+        margin-bottom:  ($i*$range)
+        margin-top:  ($i*$range)
+
+@for $i from 1 through 8
+    .p-#{$i}
+        padding:  ($i*$range)
+    .pl-#{$i}
+        padding-left:  ($i*$range)
+    .pr-#{$i}
+        padding-right:  ($i*$range)
+    .px-#{$i}
+        padding-left:  ($i*$range)
+        padding-right:  ($i*$range)
+    .pt-#{$i}
+        padding-top:  ($i*$range)
+    .pb-#{$i}
+        padding-bottom:  ($i*$range)
+    .py-#{$i}
+        padding-bottom:  ($i*$range)
+        padding-top:  ($i*$range)
+
+@for $i from 1 through 10
+    .h-#{$i}0
+        height:  ($i*$proc)
+    .w-#{$i}0
+        width:  ($i*$proc)
+
+.m-auto
+    margin:  auto
+    justify-content: center
+.ml-auto
+     margin-left:  auto
+.mr-auto
+    margin-right:  auto
+.mx-auto
+    margin-left:  auto
+    margin-right:  auto
+.mt-auto
+    margin-top: auto
+.mb-auto
+    margin-bottom:  auto
+.my-auto
+    margin-bottom:  auto
+    margin-top:  auto
+    justify-content: center
+    
+
+@mixin template-align($name)
+    .text-#{$name}
+        text-align: #{$name}
+
+@include template-align("left")
+@include template-align("center")
+@include template-align("right")
+
+@mixin template-text-color($name)
+    .text-#{$name}
+        color: #{$name}
+
+@include template-text-color("white")
+@include template-text-color("black")
+@include template-text-color("gray")

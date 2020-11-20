@@ -1,0 +1,154 @@
+$scal: 0.65
+$baseColorBG:#3a393971
+.hex-container
+    position: absolute
+    animation: hex-start-animation 5s
+
+@keyframes hex-start-animation
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+.hexagon
+    font-size: 12px*$scal
+
+    /* Sterowanie rozmiarem figury.
+    width: 100px*$scal
+    height: 50px*$scal
+    background-color: #{$baseColorBG}
+    position: relative
+    margin: 30px*$scal auto 0
+    transition: all .7s
+
+    &:before
+        content: ''
+        position: absolute
+        top: 50px*$scal
+        left: 0
+        border-top: 30px*$scal solid #{$baseColorBG}
+        border-left: 50px*$scal solid transparent
+        border-right: 50px*$scal solid transparent
+        transition: all .7s
+
+    &:after
+        content: ''
+        position: absolute
+        bottom: 50px*$scal
+        left: 0
+        border-bottom:  30px*$scal solid #{$baseColorBG}
+        border-left: 50px*$scal solid transparent
+        border-right: 50px*$scal solid transparent
+        transition: all .7s
+
+    svg
+        position: relative
+        width: 60px* $scal
+        z-index: 5
+        left: 50%
+        top: 50%
+        margin-left: -30px * $scal
+        margin-top: -30px * $scal
+
+        path
+            fill: #bebebe
+    
+
+@mixin template-hex($color, $name)
+    .#{$name}:hover
+        background-color: #{$color} !important
+        width: 110px*$scal
+        height: 55px*$scal
+        margin: 30px*$scal auto 0
+        margin-right: -5px *$scal
+        margin-top: 25px *$scal
+
+        &:after
+            bottom: 55px*$scal
+            border-bottom:  33px*$scal solid #{$color} !important
+            border-left: 55px*$scal solid transparent
+            border-right: 55px*$scal solid transparent
+        &:before
+           top: 55px*$scal
+           border-top: 33px*$scal solid  #{$color} !important
+           border-left: 55px*$scal solid transparent
+           border-right: 55px*$scal solid transparent
+        svg
+            width: 66px* $scal
+            margin-left: -33px * $scal
+            margin-top: -33px * $scal
+            path
+                fill:#fff
+    $rand: random(8)+2
+    .#{$name}
+        animation: #{$name}-animation 4s
+        animation-delay: #{$rand}s
+        &:after
+            animation: #{$name}-animation-a 4s
+            animation-delay: #{$rand}s
+        &:before
+            animation: #{$name}-animation-b 4s
+            animation-delay: #{$rand}s
+       
+    @keyframes #{$name}-animation
+        0%
+            background-color: #{$baseColorBG}
+        50%
+            background-color: #{$color}
+        100%
+            background-color: #{$baseColorBG}
+
+    @keyframes #{$name}-animation-a
+        0%
+            border-bottom:30px*$scal solid #{$baseColorBG}
+        50%
+            border-bottom:30px*$scal solid #{$color}
+        100%
+            border-bottom:30px*$scal solid #{$baseColorBG}
+    @keyframes #{$name}-animation-b
+        0%
+            border-top: 30px*$scal solid  #{$baseColorBG}
+        50%
+            border-top: 30px*$scal solid  #{$color}
+        100%
+            border-top: 30px*$scal solid  #{$baseColorBG}
+
+@include template-hex(#007ACC,"code")
+@include template-hex(#E13136,"angular")
+@include template-hex(#498afe,"ionic")
+@include template-hex(#813787,"csharp")
+@include template-hex(#512bd4,"dotnet")
+@include template-hex(#5c2d91,"core")
+@include template-hex(#fe731d,"ai")
+@include template-hex(#efd55c,"js")
+@include template-hex(#f16529,"html")
+@include template-hex(#29a9df,"css")
+@include template-hex(#ffcb2c,"firebase")
+@include template-hex(#353535,"inkscape")
+@include template-hex(#cd6799,"sass")
+@include template-hex(#3178c6,"ts")
+@include template-hex(#689f63,"nodejs")
+@include template-hex(#444444,"cordova")
+@include template-hex(#563c7d,"bootstrap")
+@include template-hex(#1f416e,"less")
+@include template-hex(#3949ab,"c")
+@include template-hex(#3949ab,"cplus")
+@include template-hex(#ffc91e,"python")
+@include template-hex(#007ACC,"tfs")
+@include template-hex(#353535,"unity")
+@include template-hex(#353535,"github")
+@include template-hex(#7e3cbc,"vs")
+@include template-hex(#fc6d26,"gitlab")
+@include template-hex(#f05033,"git")
+@include template-hex(#f56551,"laravel")
+@include template-hex(#5d5339,"gimp")
+@include template-hex(#00758f,"mysql")
+@include template-hex(#00758f,"postgres")
+@include template-hex(#6082bb,"php")
+@include template-hex(#ff005e,"invision")
+@include template-hex(#fcd735,"augury")
+
+
+
+
+
