@@ -20,6 +20,9 @@
     float: left
     position: relative
     transition: all 1s
+    animation: logo-animation 2s
+    animation-delay: 1s
+  
 
   a
     float: left
@@ -52,7 +55,11 @@
       &.active
         padding: 17px 16px!important
 
-      
+@keyframes logo-animation  
+  from 
+    transform: rotate(0deg) 
+  to 
+    transform: rotate(720deg)
 
 @media screen and (max-width: 900px)
   #nav-bar a

@@ -1,7 +1,8 @@
 $scal: 0.65
+$baseColorBG:#3a393971
 .hex-container
     position: absolute
-    animation: hex-start-animation 3s
+    animation: hex-start-animation 5s
 
 @keyframes hex-start-animation
     0%
@@ -15,7 +16,7 @@ $scal: 0.65
     /* Sterowanie rozmiarem figury.
     width: 100px*$scal
     height: 50px*$scal
-    background-color:  #292828
+    background-color: #{$baseColorBG}
     position: relative
     margin: 30px*$scal auto 0
     transition: all .7s
@@ -25,7 +26,7 @@ $scal: 0.65
         position: absolute
         top: 50px*$scal
         left: 0
-        border-top: 30px*$scal solid #292828
+        border-top: 30px*$scal solid #{$baseColorBG}
         border-left: 50px*$scal solid transparent
         border-right: 50px*$scal solid transparent
         transition: all .7s
@@ -35,7 +36,7 @@ $scal: 0.65
         position: absolute
         bottom: 50px*$scal
         left: 0
-        border-bottom:  30px*$scal solid#292828
+        border-bottom:  30px*$scal solid #{$baseColorBG}
         border-left: 50px*$scal solid transparent
         border-right: 50px*$scal solid transparent
         transition: all .7s
@@ -78,7 +79,7 @@ $scal: 0.65
             margin-top: -33px * $scal
             path
                 fill:#fff
-    $rand: random(8)+ 2
+    $rand: random(8)+2
     .#{$name}
         animation: #{$name}-animation 4s
         animation-delay: #{$rand}s
@@ -91,26 +92,26 @@ $scal: 0.65
        
     @keyframes #{$name}-animation
         0%
-            background-color: #292828
+            background-color: #{$baseColorBG}
         50%
             background-color: #{$color}
         100%
-            background-color: #292828
+            background-color: #{$baseColorBG}
 
     @keyframes #{$name}-animation-a
         0%
-            border-bottom:30px*$scal solid #292828
+            border-bottom:30px*$scal solid #{$baseColorBG}
         50%
             border-bottom:30px*$scal solid #{$color}
         100%
-            border-bottom:30px*$scal solid #292828
+            border-bottom:30px*$scal solid #{$baseColorBG}
     @keyframes #{$name}-animation-b
         0%
-            border-top: 30px*$scal solid  #292828
+            border-top: 30px*$scal solid  #{$baseColorBG}
         50%
             border-top: 30px*$scal solid  #{$color}
         100%
-            border-top: 30px*$scal solid  #292828
+            border-top: 30px*$scal solid  #{$baseColorBG}
 
 @include template-hex(#007ACC,"code")
 @include template-hex(#E13136,"angular")

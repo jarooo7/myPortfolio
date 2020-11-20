@@ -1,3 +1,68 @@
-<p>
-  contact works!
-</p>
+<div class="container">
+  <div class="row row-black-c-photo1 text-white">
+    <div *ngFor="let item of [].constructor(150)" class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="col-min-8 col-6 mx-auto ">
+      <div class="my-auto bg-text-contact text-white text-center pb-7">
+        <div class="mx-auto mt-7 text-container px-4 ">
+          <div class="animation-text-container bottom-line">
+            <div class="animation-text-top">
+              <h3>Kontakt</h3>
+            </div>
+          </div>
+          <div class="mx animation-text-container ">
+            <div class="animation-text-bottom">
+              <span>Tu bedzie tekst</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto text-center field">
+        <app-contact-button style="opacity: 0" class="g-1" [className]="'github'"></app-contact-button>
+
+        <app-contact-button style="opacity: 0" class="g-2" [className]="'linkedin'"></app-contact-button>
+
+        <app-contact-button style="opacity: 0" class="g-3" [className]="'envelope'"></app-contact-button>
+      </div>
+    </div>
+    <div class="col-min-8 col-6 mx-auto text-center">
+      <form [formGroup]="contactForm" class="form mx-auto p-8">
+        <div class="group  g-1">
+          <input required [ngClass]="{'error': isError('name')}"
+            type="text" formControlName="name">
+          <label [ngClass]="{'error': isError('name')}">
+            Imie/nazwa firmy
+          </label>
+          <p [ngClass]="{'error-com': isError('name')}"> 
+            <i class="fa fa-exclamation-triangle mr-1"></i>
+            Pole wymagane
+          </p>
+        </div>
+        <div class="group g-2">
+          <input [ngClass]="{'error': isError('email')}" required
+            type="text" formControlName="email">
+          <label [ngClass]="{'error': isError('email')}">
+            Email
+          </label>
+          <p [ngClass]="{'error-com': isError('email')}"> 
+            <i class="fa fa-exclamation-triangle mr-1"></i>
+            {{testEmailError()}}
+          </p>
+        </div>
+        <div class="group g-3">
+          <textarea required rows="3" formControlName="message"
+            [ngClass]="{'error': isError('message')}"></textarea>
+          <label [ngClass]="{'error': isError('message') }">
+            Wiadomość
+          </label>
+          <p [ngClass]="{'error-com': isError('message')}">             
+            <i class="fa fa-exclamation-triangle mr-1"></i>
+            Napisz wiadomość
+          </p>
+        </div>
+        <button (click)="sendEmail()" class="btn-orange g-4 btn-100">Wyślij</button>
+      </form>
+    </div>
+  </div>
+</div>

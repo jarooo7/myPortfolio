@@ -12,6 +12,9 @@ import { SkilsComponent } from './skils/skils.component';
 import { ContactComponent } from './contact/contact.component';
 import { HexagonComponent } from './atoms-components/hexagon/hexagon.component';
 import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
+import { ContactButtonComponent } from './atoms-components/contact-button/contact-button.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,16 @@ import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
     ProjectsComponent,
     SkilsComponent,
     ContactComponent,
-    HexagonComponent
+    HexagonComponent,
+    ContactButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SimpleSmoothScrollModule
+    SimpleSmoothScrollModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
