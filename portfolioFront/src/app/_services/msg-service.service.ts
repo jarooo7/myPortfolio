@@ -4,14 +4,14 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class MsgServiceService {
+export class MsgService {
 
   constructor(private http: HttpClient) { }
 
   senndingMessage(body) {
     const headers = {
       headers: new HttpHeaders({
-        'Content-Type': 'aplication/json'
+        'Content-Type': 'application/json'
       })
     };
     return this.http.post('http://localhost:3000/email', body, headers);

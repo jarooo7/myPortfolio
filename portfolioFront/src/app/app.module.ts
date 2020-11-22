@@ -15,6 +15,7 @@ import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
 import { ContactButtonComponent } from './atoms-components/contact-button/contact-button.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MsgService } from './_services/msg-service.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [MsgService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MsgService } from '../_services/msg-service.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,13 +11,13 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private msgService: MsgService) { }
 
   ngOnInit() {
     this.initForm();
   }
 
-  initForm(){
+  initForm() {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -24,28 +25,27 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  isError(element: string): boolean{
+  isError(element: string): boolean {
     return this.contactForm.get(element).errors && this.contactForm.get(element).touched;
   }
 
-  testEmailError(): string{
+  testEmailError(): string {
     return this.contactForm.get('email').hasError('required') ? 'Adres email wymagany' : 'Nieprawidłowy adres email';
   }
 
-  sendEmail(){
+  sendEmail() {
     if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-      // this.user = Object.assign({}, this.registerForm.value);
+      const msg = {
+        email: '<div style="width: 100%; background-color: black; color: white; padding: 20px "><h1>Wiadomość od: ' + this.contactForm.get('name').value +
+          '</h1><h3>Email : ' + this.contactForm.get('email').value +
+          '</h3></div><p style="margin: 20px;">' + this.contactForm.get('message').value + '</p>'
+      }
+      this.msgService.senndingMessage(
+        msg
+      ).subscribe((d) => {
+        console.log(d);
+      });
 
-      // this.authService.register(this.user).subscribe(() => {
-      //   this.alertify.success('rejestracja udana');
-      // }, error => {
-      //   this.alertify.error(error);
-      // }, () => {
-      //   this.authService.login(this.user).subscribe(() => {
-      //     this.router.navigate(['/uzytkownicy']);
-      //   });
-      // });
     }
   }
 
