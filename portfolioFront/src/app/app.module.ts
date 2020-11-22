@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MsgService } from './_services/msg-service.service';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { CardProjectComponent } from './other-components/card-project/card-project.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     SkilsComponent,
     ContactComponent,
     HexagonComponent,
-    ContactButtonComponent
+    ContactButtonComponent,
+    CardProjectComponent
   ],
   imports: [
     BrowserModule,
