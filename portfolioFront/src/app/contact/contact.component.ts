@@ -61,4 +61,8 @@ export class ContactComponent implements OnInit {
     this.alert.openAlertSuccess(msg);
   }
 
+  openPage(url: string){
+    window.open(url, '_blank');
+  }
+
 }

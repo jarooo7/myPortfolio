@@ -20,12 +20,18 @@
       </div>
       <div class="mx-auto text-center field">
         
-        <app-contact-button style="opacity: 0" class="g-1"  [className]="'github'"></app-contact-button>
+        <app-contact-button style="opacity: 0" class="g-1"
+        (click)="openPage('https://github.com/jarooo7')"
+        [className]="'github'"></app-contact-button>
 
-        <app-contact-button style="opacity: 0" class="g-2"  [className]="'linkedin'"></app-contact-button>
+        <app-contact-button style="opacity: 0" class="g-2"  
+        (click)="openPage(' https://www.linkedin.com/in/jarek-piotrowski-3b9409200/')" 
+        [className]="'linkedin'"></app-contact-button>
 
-        <app-contact-button style="opacity: 0" class="g-3"  [className]="'envelope'"></app-contact-button>
-      </div>
+        <app-contact-button style="opacity: 0" class="g-3" 
+        (click)="openPage('mailto:jarek564as@gmail.com')" 
+        [className]="'envelope'"></app-contact-button>
+      </div> 
     </div>
     <div class="col-min-8 col-6 mx-auto text-center">
       <form [formGroup]="contactForm" class="form mx-auto p-8">
