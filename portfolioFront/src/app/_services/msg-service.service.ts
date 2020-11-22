@@ -14,8 +14,14 @@ export class MsgService {
         'Content-Type': 'application/json'
       })
     };
-    return this.http.post('http://localhost:3000/email', body, headers);
+    return this.http.post<ResModule>('http://localhost:3000/email', body, headers);
   }
 
 
+}
+
+export class ResModule{
+  success?: string;
+  error?: string;
+  msg?: string;
 }

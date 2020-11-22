@@ -1,8 +1,8 @@
 var express=require('express');
-var bodyParser = require('body-parser')// importing body parser middleware to parse form content from HTML
+var bodyParser = require('body-parser')
 var cors = require('./../cors');
 const emailRouter = express.Router();
-var nodemailer = require('nodemailer');//importing node mailer
+var nodemailer = require('nodemailer');
 
 emailRouter.route('/')
 .options(cors.cors,(req,res)=>{
@@ -10,28 +10,19 @@ emailRouter.route('/')
     res.sendStatus(200);
 })
 
-// route which captures form details and sends it to your personal mail
 .post(cors.cors,(req,res,next)=>{
   
   console.log("oooo",req.body.email)
-  /*Transport service is used by node mailer to send emails, it takes service and auth object as parameters.
-    here we are using gmail as our service 
-    In Auth object , we specify our email and password
-  */
+
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'jarpiotr56a@gmail.com',//replace with your email
-      pass: 'SwEmKo&7!1'//replace with your password
+      user: 'jarpiotr56a@gmail.com',
+      pass: 'SwEmKo&7!1'
     }
   }); 
 
-  /*
-    In mail options we specify from and to address, subject and HTML content.
-    In our case , we use our personal email as from and to address,
-    Subject is Contact name and 
-    html is our form details which we parsed using bodyParser.
-  */
+ 
   var mailOptions = {
     from: 'jarpiotr56a@gmail.com',
     to: 'jarek564as@gmail.com',
@@ -39,17 +30,14 @@ emailRouter.route('/')
     html: req.body.email
   };
   
-  /* Here comes the important part, sendMail is the method which actually sends email, it takes mail options and
-   call back as parameter 
-  */
-
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
-      res.send('error') // if error occurs send error as response to client
+      res.send({error: 'Błąd wysyłania',
+      msg: error
+    })
     } else {
-      console.log('Email sent: ' + info.response);
-      res.send('Sent Successfully')//if mail is sent successfully send Sent successfully as response
+      res.send({success: 'Wiadomość wysłana'})
     }
   });
 })

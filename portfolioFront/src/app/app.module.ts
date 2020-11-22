@@ -16,6 +16,7 @@ import { ContactButtonComponent } from './atoms-components/contact-button/contac
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MsgService } from './_services/msg-service.service';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MsgService } from './_services/msg-service.service';
     BrowserAnimationsModule,
     SimpleSmoothScrollModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [MsgService],
   bootstrap: [AppComponent]
