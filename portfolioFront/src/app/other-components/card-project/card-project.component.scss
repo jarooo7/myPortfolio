@@ -25,12 +25,6 @@ $bp-lg: 1100px;
   }
 }
 
-
-.img-1{
-    background-image: url("https://cnet2.cbsistatic.com/img/-e95qclc6pwSnGE2YccC2oLDW_8=/1200x675/2020/04/16/7d6d8ed2-e10c-4f91-b2dd-74fae951c6d8/bazaart-edit-app.jpg");
-  }
-
-
 .card {  
   position: relative;
   display: flex;
@@ -169,3 +163,11 @@ $bp-lg: 1100px;
     }
   }
 }
+
+@mixin template-image-card($name, $r){
+  .img-#{$name}{
+    background-image: url('../../../assets/#{$name}.#{$r}');
+  }
+}
+    
+@include template-image-card("proj1","jpg")
