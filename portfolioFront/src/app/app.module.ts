@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MsgService } from './_services/msg-service.service';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CardProjectComponent } from './other-components/card-project/card-project.component';
+import { CardProjectContainerComponent } from './other-components/card-project-container/card-project-container.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { CardProjectComponent } from './other-components/card-project/card-proje
     HexagonComponent,
     ContactButtonComponent,
     CardProjectComponent,
-    CardProjectComponent
+    CardProjectContainerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,102 +1,10 @@
-<div class="page-content">
-  <div class="card img-proj1">
-    <div class="content">
-      <h2 class="title">Projekt 1</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery </p>
-        <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 2</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 3</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 4</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 4</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 4</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 4</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 4</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 4</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Projekt 4</h2>
-      <p class="text-card">Krótki opis do projektu bla bla bla raz dwa trzy cztery</p>
-      <div>
-        <button class="btn-white"><i class="fa fa-globe"></i></button>
-        <button class="btn-gray"><i class="fa fa-github"></i></button>
-      </div>
+<div class="card" [ngClass]="image">
+  <div class="content">
+    <h2 class="title">{{title}}</h2>
+    <p class="text-card">{{content}} </p>
+    <div>
+      <button class="btn-white"><i class="fa fa-globe"></i></button>
+      <button class="btn-gray"><i class="fa fa-github"></i></button>
     </div>
   </div>
 </div>

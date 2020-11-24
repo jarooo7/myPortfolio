@@ -1,0 +1,21 @@
+$bp-md: 600px
+$bp-mdx: 800px
+$bp-lg: 1100px
+
+* 
+  box-sizing: border-box
+
+.page-content 
+  display: grid
+  grid-gap: 1rem
+  padding: 1rem
+  margin: 0 auto
+  
+  @media (min-width: $bp-md) 
+    grid-template-columns: repeat(2, 1fr)
+  
+  @media (min-width: $bp-mdx) 
+    grid-template-columns: repeat(3, 1fr)
+
+  @media (min-width: $bp-lg) 
+    grid-template-columns: repeat(4, 1fr)
