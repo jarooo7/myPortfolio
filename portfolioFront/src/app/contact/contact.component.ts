@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { stringify } from 'querystring';
 import { AlertService } from '../_services/alert.service';
 import { MsgService } from '../_services/msg-service.service';
 
@@ -35,22 +36,24 @@ export class ContactComponent implements OnInit {
   }
 
   sendEmail() {
-    if (this.contactForm.valid) {
-      const msg = {
+    if (!this.contactForm.valid) {
+      this.openError('Wprowadź poprawnie wszystkie dane do formularza');
+      return;
+    }
+    const msg = {
         email: '<div style="width: 100%; background-color: black; color: white; padding: 20px "><h1>Wiadomość od: ' + this.contactForm.get('name').value +
           '</h1><h3>Email : ' + this.contactForm.get('email').value +
           '</h3></div><p style="margin: 20px;">' + this.contactForm.get('message').value + '</p>'
       };
-      this.msgService.senndingMessage(
+    this.msgService.senndingMessage(
         msg
       ).subscribe((res) => {
         this.openSuccess(res.success);
       },
         (e) => {
-          this.openError(e.error);
+          typeof e.error === 'object' || e.error === null  ? this.openError('Wystąpił błąd wysyłania') : this.openError(e.error);
         }
       );
-    }
   }
 
   openError(msg: string) {
