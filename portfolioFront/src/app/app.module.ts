@@ -30,6 +30,7 @@ import { CardProjectComponent } from './other-components/card-project/card-proje
     ContactComponent,
     HexagonComponent,
     ContactButtonComponent,
+    CardProjectComponent,
     CardProjectComponent
   ],
   imports: [
