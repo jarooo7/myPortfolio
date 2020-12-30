@@ -9,29 +9,39 @@ export class CardProjectContainerComponent implements OnInit {
 
   projList = [
     {
-      img: 'img-proj1',
-      title: 'Projekt 1',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask'
+      img: 'img-rekoportal1',
+      title: 'RekoPortal',
+      content: 'Aplikacja webowa portalu społecznościowego dla rekonstruktorów historycznych. Angulat & Firebase',
+      link: 'http://rekoportal.j.pl/',
+      git: '#'
     },
     {
       img: 'img-proj1',
       title: 'Projekt 2',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask'
+      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      link: 'http://rekoportal.j.pl/',
+      git: '#'
     },
     {
       img: 'img-proj1',
       title: 'Projekt 3',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask'
+      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      link: 'http://rekoportal.j.pl/',
+      git: '#'
     },
     {
       img: 'img-proj1',
       title: 'Projekt 4',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask'
+      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      link: 'http://rekoportal.j.pl/',
+      git: '#'
     },
     {
       img: 'img-proj1',
       title: 'Projekt 5',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask'
+      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      link: 'http://rekoportal.j.pl/',
+      git: '#'
     },
   ];
 

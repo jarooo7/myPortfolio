@@ -9,6 +9,8 @@ export class CardProjectComponent implements OnInit {
   @Input() image: string;
   @Input() title: string;
   @Input() content: string;
+  @Input() link: string;
+  @Input() git: string;
 
   constructor() { }
 
