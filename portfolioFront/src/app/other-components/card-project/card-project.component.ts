@@ -17,4 +17,7 @@ export class CardProjectComponent implements OnInit {
   ngOnInit() {
   }
 
+  openPage(url: string){
+    window.open(url, '_blank');
+  }
 }

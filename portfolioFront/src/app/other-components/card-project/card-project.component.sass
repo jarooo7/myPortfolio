@@ -112,7 +112,42 @@ $bp-lg: 1100px
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+
+@mixin template-image-card2($name, $r)
+  .img-#{$name}-2
+    background-image: url('../../../assets/photo/project/#{$name}1.#{$r}')
+    background-position: center
+    background-repeat: no-repeat
+    animation: animation-#{$name} 15s infinite alternate
+    background-size: cover
+  @keyframes animation-#{$name}
+    0%
+      background-image: url('../../../assets/photo/project/#{$name}1.#{$r}')
+    5%, 50%
+      background-image: url('../../../assets/photo/project/#{$name}2.#{$r}')
+    55%, 100%
+      background-image: url('../../../assets/photo/project/#{$name}1.#{$r}')
+
+
+@mixin template-image-card3($name, $r)
+  .img-#{$name}-3
+    background-image: url('../../../assets/photo/project/#{$name}1.#{$r}')
+    background-position: center
+    background-repeat: no-repeat
+    animation: animation-#{$name} 22s infinite alternate
+    background-size: cover
+  @keyframes animation-#{$name}
+    0%
+      background-image: url('../../../assets/photo/project/#{$name}1.#{$r}')
+    3%, 33%
+      background-image: url('../../../assets/photo/project/#{$name}2.#{$r}')
+    36%, 66%
+      background-image: url('../../../assets/photo/project/#{$name}3.#{$r}')
+    69%, 100%
+      background-image: url('../../../assets/photo/project/#{$name}1.#{$r}')
+
+
   
     
 @include template-image-card("proj1","jpg")
-@include template-image-card("rekoportal1","png")
+@include template-image-card3("rekoportal","png")

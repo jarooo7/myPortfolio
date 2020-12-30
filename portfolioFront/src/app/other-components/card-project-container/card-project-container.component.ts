@@ -9,7 +9,7 @@ export class CardProjectContainerComponent implements OnInit {
 
   projList = [
     {
-      img: 'img-rekoportal1',
+      img: 'img-rekoportal-3',
       title: 'RekoPortal',
       content: 'Aplikacja webowa portalu społecznościowego dla rekonstruktorów historycznych. Angulat & Firebase',
       link: 'http://rekoportal.j.pl/',
