@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardModel } from 'src/app/models/card.model';
 
 @Component({
   selector: 'app-card-project-container',
@@ -7,41 +8,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardProjectContainerComponent implements OnInit {
 
-  projList = [
+  projList: CardModel[] = [
     {
-      img: 'img-rekoportal1',
+      image: 'img-rekoportal1',
       title: 'RekoPortal',
-      content: 'Aplikacja webowa portalu społecznościowego dla rekonstruktorów historycznych. Angulat & Firebase',
+      content: 'Aplikacja webowa portalu społecznościowego dla rekonstruktorów historycznych.',
       link: 'http://rekoportal.j.pl/',
-      git: '#'
+      git: '#',
+      icon:['angular','firebase','sass']
     },
     {
-      img: 'img-apkrekoportal1',
+      image: 'img-apkrekoportal1',
       title: 'RekoPortal na Androida',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      content: 'Aplikacja na urzadzenia z systemem Android portalu społeczniościowego RekoPortal',
       link: 'http://rekoportal.j.pl/',
-      git: '#'
+      git: '#',
+      icon:['ionic', 'firebase', 'cordova','nodejs']
     },
     {
-      img: 'img-proj1',
+      image: 'img-proj1',
       title: 'Projekt 3',
       content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
       link: 'http://rekoportal.j.pl/',
-      git: '#'
+      git: '#',
+      icon:['c-sharp', 'xna']
     },
     {
-      img: 'img-proj1',
+      image: 'img-proj1',
       title: 'Projekt 4',
       content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
       link: 'http://rekoportal.j.pl/',
-      git: '#'
+      git: '#',
+      icon:[]
     },
     {
-      img: 'img-proj1',
+      image: 'img-proj1',
       title: 'Projekt 5',
       content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
       link: 'http://rekoportal.j.pl/',
-      git: '#'
+      git: '#',
+      icon:[]
     },
   ];
 

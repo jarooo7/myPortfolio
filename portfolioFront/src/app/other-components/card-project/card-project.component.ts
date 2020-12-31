@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CardModel } from 'src/app/models/card.model';
 
 @Component({
   selector: 'app-card-project',
@@ -6,12 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card-project.component.sass']
 })
 export class CardProjectComponent implements OnInit {
-  @Input() image: string;
-  @Input() title: string;
-  @Input() content: string;
-  @Input() link: string;
-  @Input() git: string;
-
+  @Input() card: CardModel;
   constructor() { }
 
   ngOnInit() {
