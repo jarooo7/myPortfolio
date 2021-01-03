@@ -10,12 +10,20 @@ export class CardProjectContainerComponent implements OnInit {
 
   projList: CardModel[] = [
     {
+      image: 'img-goodwire',
+      title: 'Good Wire',
+      content: 'System monitoringu jakości powietrza, wyposarzony w mobilne urzadzenia pomiarowe.',
+      link: 'http://rekoportal.j.pl/',
+      git: '#',
+      icon: ['angular', 'laravel', 'sass', 'c']
+    },
+    {
       image: 'img-rekoportal1',
       title: 'RekoPortal',
       content: 'Aplikacja webowa portalu społecznościowego dla rekonstruktorów historycznych.',
       link: 'http://rekoportal.j.pl/',
       git: '#',
-      icon:['angular','firebase','sass']
+      icon: ['angular', 'firebase', 'sass']
     },
     {
       image: 'img-apkrekoportal1',
@@ -23,32 +31,47 @@ export class CardProjectContainerComponent implements OnInit {
       content: 'Aplikacja na urzadzenia z systemem Android portalu społeczniościowego RekoPortal',
       link: 'http://rekoportal.j.pl/',
       git: '#',
-      icon:['ionic', 'firebase', 'cordova','nodejs']
+      icon: ['ionic', 'firebase', 'cordova', 'nodejs']
     },
     {
-      image: 'img-proj1',
-      title: 'Projekt 3',
+      image: 'img-pearpair',
+      title: 'Pear Pair',
       content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
       link: 'http://rekoportal.j.pl/',
       git: '#',
-      icon:['c-sharp', 'xna']
+      icon: ['angular', 'net-core', 'c-sharp']
     },
     {
-      image: 'img-proj1',
-      title: 'Projekt 4',
+      image: 'img-gogojump',
+      title: 'GO! GO! JUMP!',
+      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      src: '../../../assets/photo/project/Gogo.apk',
+      git: '#',
+      icon: ['unity', 'c-sharp']
+    },
+    {
+      image: 'img-pokeinvaders',
+      title: 'Poke Invaders',
       content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
       link: 'http://rekoportal.j.pl/',
       git: '#',
-      icon:[]
+      icon: ['c-sharp', 'xna']
     },
     {
-      image: 'img-proj1',
-      title: 'Projekt 5',
+      image: 'img-astar',
+      title: 'Algorytm A Star',
       content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
-      link: 'http://rekoportal.j.pl/',
-      git: '#',
-      icon:[]
+      git: 'https://github.com/jarooo7/Astar',
+      icon: ['c']
     },
+    {
+      image: 'img-AI1',
+      title: 'Algorytm Apriori',
+      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      git: 'https://github.com/jarooo7/Astar',
+      icon: ['c']
+    },
+
   ];
 
   constructor() { }
