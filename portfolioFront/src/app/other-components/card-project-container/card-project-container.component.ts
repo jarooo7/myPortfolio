@@ -45,7 +45,7 @@ export class CardProjectContainerComponent implements OnInit {
       image: 'img-gogojump',
       title: 'GO! GO! JUMP!',
       content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
-      src: '../../../assets/photo/project/Gogo.apk',
+      src: '../../../assets/apps/GoGoJump.apk',
       git: '#',
       icon: ['unity', 'c-sharp']
     },
