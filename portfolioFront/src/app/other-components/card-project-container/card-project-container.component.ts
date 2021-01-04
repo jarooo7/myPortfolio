@@ -71,6 +71,20 @@ export class CardProjectContainerComponent implements OnInit {
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
+    {
+      image: 'img-AI3',
+      title: 'Algorytm k najbliższych sąsiadów',
+      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      git: 'https://github.com/jarooo7/Astar',
+      icon: ['c']
+    },
+    {
+      image: 'img-AI2',
+      title: 'Algorytm decyzyjny',
+      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      git: 'https://github.com/jarooo7/Astar',
+      icon: ['c']
+    },
 
   ];
 
