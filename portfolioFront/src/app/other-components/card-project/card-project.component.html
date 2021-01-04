@@ -1,10 +1,14 @@
-<div class="card" [ngClass]="image">
+<div class="card" [ngClass]="card.image">
   <div class="content">
-    <h2 class="title">{{title}}</h2>
-    <p class="text-card">{{content}} </p>
+    <h2 class="title">{{card.title}}</h2>
+    <p class="text-card">{{card.content}}
+      <br>
+      <img *ngFor="let item of card.icon"  [src]="'../../assets/icons/'+item+'.svg'" > 
+    </p>
     <div>
-      <button class="btn-white"><i class="fa fa-globe"></i></button>
-      <button class="btn-gray"><i class="fa fa-github"></i></button>
+      <button class="btn-white" *ngIf="card.link!==undefined" (click)="openPage(card.link)"><i class="fa fa-globe"></i></button>
+      <button class="btn-white" *ngIf="card.src!==undefined" (click)="openPage(card.src)"><i class="fa fa-download"></i></button>
+      <button class="btn-gray" (click)="openPage(card.git)"><i class="fa fa-github"></i></button>
     </div>
   </div>
 </div>

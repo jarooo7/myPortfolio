@@ -1,11 +1,11 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hexagon',
   templateUrl: './hexagon.component.html',
   styleUrls: ['./hexagon.component.sass']
 })
-export class HexagonComponent implements OnInit, AfterViewInit {
+export class HexagonComponent implements OnInit {
 
   @Input() name: string;
   @Input() positonRight: number;
@@ -14,8 +14,6 @@ export class HexagonComponent implements OnInit, AfterViewInit {
 
   constructor() { }
 
-  ngAfterViewInit() {
-}
 
   ngOnInit() {
   }
