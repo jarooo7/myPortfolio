@@ -28,7 +28,7 @@ export class CardProjectContainerComponent implements OnInit {
     {
       image: 'img-apkrekoportal1',
       title: 'RekoPortal na Androida',
-      content: 'Aplikacja na urzadzenia z systemem Android portalu społeczniościowego RekoPortal',
+      content: 'Aplikacja na system Android portalu społeczniościowego dla rekonstruktorów historycznych',
       link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['ionic', 'firebase', 'cordova', 'nodejs']
@@ -36,7 +36,7 @@ export class CardProjectContainerComponent implements OnInit {
     {
       image: 'img-pearpair',
       title: 'Pear Pair',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      content: 'Serwisu randkowego w Angular z API napisanym w ASP.NET Core',
       link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['angular', 'net-core', 'c-sharp']
@@ -44,7 +44,7 @@ export class CardProjectContainerComponent implements OnInit {
     {
       image: 'img-gogojump',
       title: 'GO! GO! JUMP!',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      content: 'Gra  zręcznościowa, mobilna na urządzenia z systemem Android',
       src: '../../../assets/apps/GoGoJump.apk',
       git: '#',
       icon: ['unity', 'c-sharp']
@@ -52,7 +52,7 @@ export class CardProjectContainerComponent implements OnInit {
     {
       image: 'img-pokeinvaders',
       title: 'Poke Invaders',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      content: 'Gra na system Windows oparta o klasyczną grę Space Invaders',
       link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['c-sharp', 'xna']
@@ -60,28 +60,28 @@ export class CardProjectContainerComponent implements OnInit {
     {
       image: 'img-astar',
       title: 'Algorytm A Star',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      content: 'Implementacja algorytmu heurystycznego do znajdowania najkrótszej drogi',
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
     {
       image: 'img-AI1',
       title: 'Algorytm Apriori',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      content: 'Implementacja algorytmu eksploracji często używanych zestawów elementów i uczenia reguł asocjacyjnych',
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
     {
       image: 'img-AI3',
       title: 'Algorytm k najbliższych sąsiadów',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      content: 'Implementacja algorytmu używany do przewidywania wartości zmiennych losowych i klasyfikacji',
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
     {
       image: 'img-AI2',
       title: 'Algorytm decyzyjny',
-      content: 'przez twe oczy twe oczy zielone oszalałem gwiazdy chyba twym oczom oddały cały blask',
+      content: 'Implementacja algorytmu podejmujacego decyzje na podstawie przetwarzanych danych wejściowych',
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
