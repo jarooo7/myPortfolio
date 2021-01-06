@@ -16,9 +16,16 @@ import { ContactButtonComponent } from './atoms-components/contact-button/contac
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MsgService } from './_services/msg-service.service';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CardProjectComponent } from './other-components/card-project/card-project.component';
 import { CardProjectContainerComponent } from './other-components/card-project-container/card-project-container.component';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -41,7 +48,14 @@ import { CardProjectContainerComponent } from './other-components/card-project-c
     SimpleSmoothScrollModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [MsgService],
   bootstrap: [AppComponent]

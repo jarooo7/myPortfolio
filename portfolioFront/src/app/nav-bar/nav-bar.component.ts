@@ -7,6 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  menu=['home','about','projects', 'skils','contact']
   classBar = '';
   classBase = '';
   classScrolle = '';
