@@ -2,25 +2,9 @@
   <div>
     <img class="logo mx-5" src="../../assets/logo.svg">
   </div>
-  <a [routerLink]="['/home']" routerLinkActive="active">
-    <img class="icon-nav" src="../../assets/icons/home.svg">
-    <span>Strona główna</span>
-  </a>
-  <a [routerLink]="['/about']" routerLinkActive="active">
-    <img class="icon-nav" src="../../assets/icons/about.svg">
-    <span>O mnie</span>
-  </a>
-  <a [routerLink]="['/projects']" routerLinkActive="active">
-    <img class="icon-nav" src="../../assets/icons/project.svg">
-    <span>Projekty</span>
-  </a>
-  <a [routerLink]="['/skils']" routerLinkActive="active">
-    <img class="icon-nav" src="../../assets/icons/skils.svg">
-    <span>Umiejętności</span>
-  </a>
-  <a [routerLink]="['/contact']" routerLinkActive="active">
-    <img class="icon-nav" src="../../assets/icons/contact.svg">
-    <span>Kontakt</span>
+  <a *ngFor="let item of menu" [routerLink]="['/'+ item]" routerLinkActive="active">
+    <img class="icon-nav" [src]="'../../assets/icons/'+item+'.svg'">
+    <span>{{'nav.'+item|translate}}</span>
   </a>
 
   <a (click)="toggleMenu()" class="icon">

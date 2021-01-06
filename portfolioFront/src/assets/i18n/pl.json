@@ -1,0 +1,9 @@
+{
+    "nav":{
+        "home":"Strona główna",
+        "about": "O mnie",
+        "projects": "Projekty",
+        "skils": "Umiejętności",
+        "contact":"Kontakt"
+    }
+}
