@@ -5,5 +5,33 @@
         "projects": "Projekty",
         "skils": "Umiejętności",
         "contact":"Kontakt"
+    },
+    "proj":{
+        "card":{
+            "title":{
+                "rekoportal":"RekoPortal",
+                "rekoportal-m":"RekoPortal na Androida",
+                "goodwire":"Good Wire",
+                "gojump":"GO! GO! JUMP!",
+                "ai1":"Algorytm Apriori",
+                "ai2":"Algorytm decyzyjny",
+                "ai3":"Algorytm k najbliższych sąsiadów",
+                "pearpair":"Pear Pair",
+                "poke":"Poke Invaders",
+                "astar":"Algorytm A Star"
+            },
+            "content":{
+                "rekoportal":"Aplikacja webowa portalu społecznościowego dla rekonstruktorów historycznych.",
+                "rekoportal-m":"Aplikacja na system Android portalu społeczniościowego dla rekonstruktorów historycznych.",
+                "goodwire":"System monitoringu jakości powietrza, wyposarzony w mobilne urzadzenia pomiarowe.",
+                "gojump":"Gra  zręcznościowa, mobilna na urządzenia z systemem Android.",
+                "ai1":"Implementacja algorytmu eksploracji często używanych zestawów elementów i uczenia reguł asocjacyjnych.",
+                "ai2":"Implementacja algorytmu podejmujacego decyzje na podstawie przetwarzanych danych wejściowych.",
+                "ai3":"Implementacja algorytmu używany do przewidywania wartości zmiennych losowych i klasyfikacji.",
+                "pearpair":"Serwisu randkowego w Angular z API napisanym w ASP.NET Core.",
+                "poke":"Gra na system Windows oparta o klasyczną grę Space Invaders.",
+                "astar":"Implementacja algorytmu heurystycznego do znajdowania najkrótszej drogi."
+            }
+        }
     }
 }

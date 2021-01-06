@@ -1,7 +1,7 @@
 <div class="card" [ngClass]="card.image">
   <div class="content">
-    <h2 class="title">{{card.title}}</h2>
-    <p class="text-card">{{card.content}}
+    <h2 class="title">{{card.title|translate}}</h2>
+    <p class="text-card">{{card.content|translate}}
       <br>
       <img *ngFor="let item of card.icon"  [src]="'../../assets/icons/'+item+'.svg'" > 
     </p>

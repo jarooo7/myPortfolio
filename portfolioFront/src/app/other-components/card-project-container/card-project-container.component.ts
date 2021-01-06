@@ -11,77 +11,77 @@ export class CardProjectContainerComponent implements OnInit {
   projList: CardModel[] = [
     {
       image: 'img-goodwire',
-      title: 'Good Wire',
-      content: 'System monitoringu jakości powietrza, wyposarzony w mobilne urzadzenia pomiarowe.',
+      title: 'proj.card.title.goodwire',
+      content: 'proj.card.content.goodwire',
       link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['angular', 'laravel', 'sass', 'c']
     },
     {
       image: 'img-rekoportal1',
-      title: 'RekoPortal',
-      content: 'Aplikacja webowa portalu społecznościowego dla rekonstruktorów historycznych.',
+      title: 'proj.card.title.rekoportal',
+      content: 'proj.card.content.rekoportal',
       link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['angular', 'firebase', 'sass']
     },
     {
       image: 'img-apkrekoportal1',
-      title: 'RekoPortal na Androida',
-      content: 'Aplikacja na system Android portalu społeczniościowego dla rekonstruktorów historycznych',
+      title: 'proj.card.title.rekoportal-m',
+      content: 'proj.card.content.rekoportal-m',
       link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['ionic', 'firebase', 'cordova', 'nodejs']
     },
     {
       image: 'img-pearpair',
-      title: 'Pear Pair',
-      content: 'Serwisu randkowego w Angular z API napisanym w ASP.NET Core',
+      title: 'proj.card.title.pearpair',
+      content: 'proj.card.content.pearpair',
       link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['angular', 'net-core', 'c-sharp']
     },
     {
       image: 'img-gogojump',
-      title: 'GO! GO! JUMP!',
-      content: 'Gra  zręcznościowa, mobilna na urządzenia z systemem Android',
+      title: 'proj.card.title.gojump',
+      content: 'proj.card.content.gojump',
       src: '../../../assets/apps/GoGoJump.apk',
       git: '#',
       icon: ['unity', 'c-sharp']
     },
     {
       image: 'img-pokeinvaders',
-      title: 'Poke Invaders',
-      content: 'Gra na system Windows oparta o klasyczną grę Space Invaders',
+      title: 'proj.card.title.poke',
+      content: 'proj.card.content.poke',
       link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['c-sharp', 'xna']
     },
     {
       image: 'img-astar',
-      title: 'Algorytm A Star',
-      content: 'Implementacja algorytmu heurystycznego do znajdowania najkrótszej drogi',
+      title: 'proj.card.title.astar',
+      content: 'proj.card.content.astar',
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
     {
       image: 'img-AI1',
-      title: 'Algorytm Apriori',
-      content: 'Implementacja algorytmu eksploracji często używanych zestawów elementów i uczenia reguł asocjacyjnych',
+      title: 'proj.card.title.ai1',
+      content: 'proj.card.content.ai1',
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
     {
       image: 'img-AI3',
-      title: 'Algorytm k najbliższych sąsiadów',
-      content: 'Implementacja algorytmu używany do przewidywania wartości zmiennych losowych i klasyfikacji',
+      title: 'proj.card.title.ai3',
+      content: 'proj.card.content.ai3',
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
     {
       image: 'img-AI2',
-      title: 'Algorytm decyzyjny',
-      content: 'Implementacja algorytmu podejmujacego decyzje na podstawie przetwarzanych danych wejściowych',
+      title: 'proj.card.title.ai2',
+      content: 'proj.card.content.ai2',
       git: 'https://github.com/jarooo7/Astar',
       icon: ['c']
     },
