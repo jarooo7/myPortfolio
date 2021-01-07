@@ -1,6 +1,6 @@
 <div class="container" >
-  <div class="row row-black-photo4 text-white" id="page1">
-    <div *ngFor="let item of [].constructor(50)" class="circle-container">
+  <div class="row row-black-photo4 text-white">
+    <div *ngFor="let item of [].constructor(40)" class="circle-container">
       <div class="circle"></div>
     </div>
     <div class="col-min-8 col-6 mx-auto">
@@ -19,15 +19,22 @@
         </div>
       </div>
     </div>
-    <a  SimpleSmoothScroll [duration]="500" [scrollTo]="'page2'" class="b-scroll-down"><span ></span></a>
+    <a  SimpleSmoothScroll [duration]="500" [scrollTo]="'page1'" class="b-scroll-down"><span ></span></a>
   </div>
-  <div class="row row-white" id="page2">
-    <div class="col-min-8 col-6 mx-auto">nnn</div>
-    xvccdvv
+  <div class="row row-white py-8" id="page1">
+    <div class="col-min-6 col-4 mx-auto ">
+      <p class="content-about mx-3">{{"about.content"|translate}}</p>
+      <div  SimpleSmoothScroll [duration]="500" [scrollTo]="'page2'" class="mx-3 text-com">
+        <img  src="../../assets/graphic/arrow.svg">
+        <div>
+           <p class="py-3">{{"about.link-ct"|translate}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="row row-black-photo3 text-white">
-    <div *ngFor="let item of [].constructor(50)" class="circle-container">
+  <div class="row row-black-photo3 text-white" id="page2">
+    <div *ngFor="let item of [].constructor(35)" class="circle-container">
       <div class="circle"></div>
     </div>
     <div class="col-min-8 col-6 mx-auto">
@@ -45,12 +52,18 @@
           </div>
         </div>
       </div>
-    <a  SimpleSmoothScroll [duration]="500" [scrollTo]="'page4'" class="b-scroll-down"><span ></span></a>
+    <a  SimpleSmoothScroll [duration]="500" [scrollTo]="'page3'" class="b-scroll-down"><span ></span></a>
     </div>
   </div>
-  <div class="row row-white" id="page4">
+  <div class="row row-white py-8" id="page3">
+    <div class="col-min-6 col-4 mx-auto ">
+      <p class="content-about mx-3">
+        {{"about.hobby1"|translate}}
+        <a href="https://www.facebook.com/14pss/?ref=page_internal">
+          GRH 14 Pułk Strzelców Syberyjskich. 
+        </a>
+        {{"about.hobby2"|translate}}
+      </p>
+    </div>
   </div>
-
-
-
 </div>
