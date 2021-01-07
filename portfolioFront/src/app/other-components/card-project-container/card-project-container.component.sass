@@ -10,6 +10,13 @@ $bp-lg: 1100px
   grid-gap: 1rem
   padding: 1rem
   margin: 0 auto
+  animation: start-animation 3s
+
+  @keyframes start-animation
+    0%
+        opacity: 0
+    100%
+        opacity: 1
   
   @media (min-width: $bp-md) 
     grid-template-columns: repeat(2, 1fr)
