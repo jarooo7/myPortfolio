@@ -11,7 +11,7 @@
 .animation-text-container
     overflow: hidden
 
-    .animation-text-top1
+    .animation-text-top1-about
         position: relative
         top: 12vh
         animation: showTopText1 1s
@@ -100,6 +100,9 @@
         color: black
         img
             opacity: 1
+            position: relative
+            animation: arrow-animation 0.5s
+            animation-iteration-count: 3
 
     img
         transition: opacity 1s
@@ -116,3 +119,20 @@
   top: 50%
   -ms-transform: translateY(-50%)
   transform: translateY(-50%)
+
+@keyframes arrow-animation 
+    0%
+        transform: rotate(0deg)
+        top:0px 
+    25%
+        transform: rotate(-10deg) 
+        top:-10px 
+    50%
+        transform: rotate(0deg)
+        top:0px 
+    75%
+        transform: rotate(10deg) 
+        top:10px 
+    100%
+        transform: rotate(0deg)
+        top:0px  

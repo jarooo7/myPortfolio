@@ -41,6 +41,10 @@
                 ]
     },
     "about": {
+        "title1":"O mnie",
+        "title2":"W wolnym czasie",
+        "subtitle1":["Kim jestem?","Czym się zajmuje i interesuje?"],
+        "subtitle2":"Hobby i zainteresowania",
         "content":["Informatyką i programowaniem interesowałem się od dziecka",
                 " zaczynając od kółka informatycznego w szkole podstawowej oraz uczęszczania do Technikum informatycznego",
                 " w którym robiłem pierwsze kroki w programowaniu. Następnym etapem mojej edukacji były studia kieunku Informatyka", 
