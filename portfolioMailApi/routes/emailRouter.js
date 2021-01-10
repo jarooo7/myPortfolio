@@ -37,7 +37,7 @@ emailRouter.route('/')
       msg: error
     })
     } else {
-      res.send({success: 'Wiadomość wysłana'})
+      res.send({success: 'success.email'})
     }
   });
 })

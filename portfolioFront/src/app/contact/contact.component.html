@@ -8,12 +8,12 @@
         <div class="mx-auto mt-7 text-container px-4 ">
           <div class="animation-text-container bottom-line">
             <div class="animation-text-top">
-              <h3>Kontakt</h3>
+              <h3>{{"contact.title"|translate}}</h3>
             </div>
           </div>
           <div class="mx animation-text-container ">
             <div class="animation-text-bottom">
-              <span>Tu bedzie tekst</span>
+              <span>{{"contact.content"|translate}}</span>
             </div>
           </div>
         </div>
@@ -39,36 +39,36 @@
           <input required [ngClass]="{'error': isError('name')}"
             type="text" formControlName="name">
           <label [ngClass]="{'error': isError('name')}">
-            Imie/nazwa firmy
+            {{"contact.form.name"|translate}}
           </label>
           <p [ngClass]="{'error-com': isError('name')}"> 
             <i class="fa fa-exclamation-triangle mr-1"></i>
-            Pole wymagane
+            {{"error.req"|translate}}
           </p>
         </div>
         <div class="group g-2">
           <input [ngClass]="{'error': isError('email')}" required
             type="text" formControlName="email">
           <label [ngClass]="{'error': isError('email')}">
-            Email
+            {{"contact.form.email"|translate}}
           </label>
           <p [ngClass]="{'error-com': isError('email')}"> 
             <i class="fa fa-exclamation-triangle mr-1"></i>
-            {{testEmailError()}}
+            {{"error."+testEmailError()|translate}}
           </p>
         </div>
         <div class="group g-3">
           <textarea required rows="3" formControlName="message"
             [ngClass]="{'error': isError('message')}"></textarea>
           <label [ngClass]="{'error': isError('message') }">
-            Wiadomość
+            {{"contact.form.msg"|translate}}
           </label>
           <p [ngClass]="{'error-com': isError('message')}">             
             <i class="fa fa-exclamation-triangle mr-1"></i>
-            Napisz wiadomość
+            {{"error.write-msg"|translate}}
           </p>
         </div>
-        <button (click)="sendEmail()" class="btn-orange g-4 btn-100">Wyślij</button>
+        <button (click)="sendEmail()" class="btn-orange g-4 btn-100">{{"contact.form.send"|translate}}</button>
       </form>
     </div>
   </div>

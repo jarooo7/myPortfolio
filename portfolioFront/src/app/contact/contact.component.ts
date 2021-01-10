@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 import { stringify } from 'querystring';
 import { AlertService } from '../_services/alert.service';
 import { MsgService } from '../_services/msg-service.service';
@@ -13,7 +14,11 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private msgService: MsgService, private alert: AlertService) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private msgService: MsgService,
+    private alert: AlertService,
+    private translate: TranslateService) { }
 
   ngOnInit() {
     this.initForm();
@@ -32,28 +37,38 @@ export class ContactComponent implements OnInit {
   }
 
   testEmailError(): string {
-    return this.contactForm.get('email').hasError('required') ? 'Adres email wymagany' : 'Nieprawidłowy adres email';
+    return this.contactForm.get('email').hasError('required') ? 'email-req' : 'error-email';
   }
 
   sendEmail() {
     if (!this.contactForm.valid) {
-      this.openError('Wprowadź poprawnie wszystkie dane do formularza');
+      this.translate
+        .get('error.error-form')
+        .subscribe(translation => { this.openError(translation); });
       return;
     }
     const msg = {
-        email: '<div style="width: 100%; background-color: black; color: white; padding: 20px "><h1>Wiadomość od: ' + this.contactForm.get('name').value +
-          '</h1><h3>Email : ' + this.contactForm.get('email').value +
-          '</h3></div><p style="margin: 20px;">' + this.contactForm.get('message').value + '</p>'
-      };
+      email: '<div style="width: 100%; background-color: black; color: white; padding: 20px "><h1>Wiadomość od: ' + this.contactForm.get('name').value +
+        '</h1><h3>Email : ' + this.contactForm.get('email').value +
+        '</h3></div><p style="margin: 20px;">' + this.contactForm.get('message').value + '</p>'
+    };
     this.msgService.senndingMessage(
-        msg
-      ).subscribe((res) => {
-        this.openSuccess(res.success);
-      },
-        (e) => {
-          typeof e.error === 'object' || e.error === null  ? this.openError('Wystąpił błąd wysyłania') : this.openError(e.error);
-        }
-      );
+      msg
+    ).subscribe((res) => {
+      this.translate
+        .get(res.success)
+        .subscribe(translation => {
+          this.openSuccess(translation);
+        });
+    },
+      (e) => {
+        this.translate
+          .get('error.send')
+          .subscribe(translation => {
+            typeof e.error === 'object' || e.error === null ? this.openError(translation) : this.openError(e.error);
+          });
+      }
+    );
   }
 
   openError(msg: string) {
@@ -64,7 +79,7 @@ export class ContactComponent implements OnInit {
     this.alert.openAlertSuccess(msg);
   }
 
-  openPage(url: string){
+  openPage(url: string) {
     window.open(url, '_blank');
   }
 

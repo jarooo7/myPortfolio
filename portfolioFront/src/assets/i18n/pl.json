@@ -7,6 +7,7 @@
         "contact":"Kontakt"
     },
     "proj":{
+        "title":"Moje projekty",
         "card":{
             "title":{
                 "rekoportal":"RekoPortal",
@@ -55,5 +56,31 @@
         "hobby1":"Oprócz zainteresowań związanych z IT i technologią interesuję się również historią. Od 2014 roku jestem czynnym członkiem grupy rekononstrukcji historycznej ",
         "hobby2":["W wolnej chwili lubie również obejżęć dobry film lub serial. Najczęściej wybierane przezemnie gatunki kina to: filmy akcji, horror", 
                 "science fiction oraz filmy dokumentalne. Poza tym o ile pogoda pozwoli lubie odpoczynek na świeżym powietrzu w tym wycieczki rowerowe. Moim hobby jest również róznego rodzaju majsterkowanie."]
+    },
+    "home":{
+        "hellow":"Cześć, jestem",
+        "name":"JAREK",
+        "subtitle":"Front end Developer"
+    },
+    "contact":{
+        "title":"Kontakt",
+        "content":"to text",
+        "form":{
+            "name":"Imie/nazwa firmy",
+            "email":"Email",
+            "msg":"Wiadomość",
+            "send":"Wyślij"
+        }
+    },
+    "error":{
+        "req":"Pole wymagane",
+        "write-msg":"Napisz wiadomość",
+        "send":"Wystąpił błąd wysyłania",
+        "email-req" : "Adres email wymagany",
+        "error-email": "Nieprawidłowy adres email",
+        "error-form":"Wprowadź poprawnie wszystkie dane do formularza"
+    },
+    "success":{
+        "email":"Wiadomość wysłana"
     }
 }
