@@ -1,0 +1,72 @@
+.hex-container
+    position: fixed
+    bottom: 30px
+    left:10px
+    cursor: pointer
+    animation: hex-start-animation 5s
+
+@keyframes hex-start-animation
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+.hexagon
+    font-size: 20px
+    text-align: center
+    width: 50px
+    height: 25px
+    background-color: #44444455
+    position: relative
+    margin: 15px auto 0
+    transition: all .7s
+    &:hover
+        background-color: #44444488 !important
+        &:before
+            border-top: 15px solid #44444488 !important
+        &:after
+            border-bottom:  15px solid #44444488 !important
+
+    &:before
+        content: ''
+        position: absolute
+        top: 25px
+        left: 0
+        border-top: 15px solid #44444455
+        border-left: 25px solid transparent
+        border-right: 25px solid transparent
+        transition: all .7s
+        
+
+    &:after
+        content: ''
+        position: absolute
+        bottom: 25px
+        left: 0
+        border-bottom:  15px solid #44444455
+        border-left: 25px solid transparent
+        border-right: 25px solid transparent
+        transition: all .7s
+
+.lang
+    position: fixed
+    bottom: 25px
+    transition: all .7s
+    
+    img
+        opacity: 0.6
+        cursor: pointer
+        margin-right: 10px
+        width: 30px
+        filter: grayscale(90%)
+        &:hover
+            opacity: 1
+    .select
+        filter: none
+.lang-show
+    left:70px
+    opacity: 1
+.lang-hide
+    left:0px
+    opacity: 0
+

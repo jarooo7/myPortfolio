@@ -1,0 +1,9 @@
+<div class="lang" [ngClass]="classLang">
+  <img *ngFor="let item of langs" (click)="ChangeLang(item)" [src]="'../../../assets/icons/lang/'+item+'.svg'"
+    [ngClass]="{ 'select':lang==item}">
+</div>
+<div class="hex-container" (click)="ToggleLang()">
+  <div class="hexagon">
+    <i class="fa fa-language text-white" aria-hidden="true"></i>
+  </div>
+</div>

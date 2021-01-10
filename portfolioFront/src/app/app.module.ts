@@ -22,6 +22,7 @@ import { CardProjectContainerComponent } from './other-components/card-project-c
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LangChangeComponent } from './other-components/lang-change/lang-change.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -39,7 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HexagonComponent,
     ContactButtonComponent,
     CardProjectComponent,
-    CardProjectContainerComponent
+    CardProjectContainerComponent,
+    LangChangeComponent
   ],
   imports: [
     BrowserModule,
