@@ -81,7 +81,7 @@
         opacity: 1
 .content-about
     text-align: justify
-    font-size: 18px
+    font-size:  2.3vh
     a:link, a:visited 
         text-decoration: none
         color: black
@@ -92,14 +92,27 @@
     cursor: pointer
     color: #888
     font-weight: 600
+    
+    font-size:  2.3vh
    
-    transition: all 1s
+    transition: color 1s
     &:hover
         color: black
         img
             opacity: 1
 
     img
-        transition: all 1s
+        transition: opacity 1s
         float: right
         opacity: 0.7
+        height: 100px
+.about-photo
+    width: auto
+    max-width: 100%
+    max-height: 80vh
+.vertical-center 
+  margin: 0
+  position: relative
+  top: 50%
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
