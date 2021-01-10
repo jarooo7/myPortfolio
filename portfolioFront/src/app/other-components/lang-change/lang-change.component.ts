@@ -7,10 +7,11 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./lang-change.component.sass']
 })
 export class LangChangeComponent implements OnInit {
-  toggle = false
-  classLang = 'lang-hide'
-  lang = 'pl'
-  langs = ['en', 'pl']
+  toggle = false;
+  classLang = 'lang-hide';
+  classBtn='';
+  lang = 'pl';
+  langs = ['en', 'pl'];
 
   constructor(public translateService: TranslateService) {
     if (localStorage.getItem('language')) {
@@ -38,6 +39,7 @@ export class LangChangeComponent implements OnInit {
   ToggleLang() {
     this.toggle = !this.toggle;
     this.classLang = this.toggle ? 'lang-show' : 'lang-hide';
+    this.classBtn = this.toggle ? 'rotate-right' : 'rotate-left';
   }
 
   ChangeLang(l: string) {

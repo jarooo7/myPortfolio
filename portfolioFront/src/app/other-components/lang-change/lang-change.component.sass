@@ -20,6 +20,8 @@
     position: relative
     margin: 15px auto 0
     transition: all .7s
+    i
+         animation-delay: 0.5s
     &:hover
         background-color: #44444488 !important
         &:before
@@ -69,4 +71,19 @@
 .lang-hide
     left:0px
     opacity: 0
+
+.rotate-right
+    animation: rotate-r-animation 1s
+@keyframes rotate-r-animation  
+  from 
+    transform: rotate(0deg) 
+  to 
+    transform: rotate(360deg)
+.rotate-left
+    animation: rotate-l-animation 1s
+@keyframes rotate-l-animation  
+  from 
+    transform: rotate(0deg) 
+  to 
+    transform: rotate(-360deg)
 
