@@ -1,0 +1,86 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About me",
+        "projects": "Projects",
+        "skils": "Skills",
+        "contact": "Contact"
+    },
+    "proj": {
+        "title": "My projects",
+        "card": {
+            "title": {
+                "rekoportal": "RekoPortal",
+                "rekoportal-m": "RekoPortal for Android",
+                "goodwire": "Good Wire",
+                "gojump": "GO! GO! JUMP!",
+                "ai1": "Apriori Algorithm",
+                "ai2": "Decision algorithm",
+                "ai3": "k nearest neighbors algorithm",
+                "pearpair": "Pear Pair",
+                "poke": "Poke Invaders",
+                "astar": "Algorithm A Star"
+            },
+            "content": {
+                "rekoportal": "Web application of a social portal for historical reenactors.",
+                "rekoportal-m": "Android application of a social network for historical reenactors.",
+                "goodwire": "Air quality monitoring system, equipped with mobile measuring devices.",
+                "gojump": "A mobile arcade game for Android devices.",
+                "ai1": "Implementation of an algorithm for exploring frequently used element sets and learning association rules.",
+                "ai2": "Implementation of the algorithm that makes decisions based on the processed input data.",
+                "ai3": "Implementation of an algorithm used for random variable value prediction and classification.",
+                "pearpair": "Angular dating site with API written in ASP.NET Core.",
+                "poke": "A Windows game based on the classic Space Invaders game.",
+                "astar": "Implementing the shortest path finding heuristic algorithm."
+            }
+        }
+    },
+    "skills": {
+        "title": "My skills",
+        "text": ["I have been interested in the IT industry and technology for a long time. Mainly involved in creating Fronend applications.",
+                "I also have skills in creating Backend applications and programming microcontrollers and PLCs."
+                ]
+    },
+    "about": {
+        "title1": "About me",
+        "title2": "In my spare time",
+        "subtitle1": ["Who am I?", "What is my job and interests?"],
+        "subtitle2": "Hobbies and interests",
+        "content": ["I was interested in computer science and programming since I was a child",
+                "starting from an IT club in primary school and attending an IT technical school",
+                "in which I took my first steps in programming. The next stage of my education was studying Computer Science",
+                "which I started in 2015, then I also dealt with more, professional programming. I'm young",
+                "a creative and inquisitive person in a good sense. Apart from computer science, I also graduated from mechatronics studies. I like solving puzzles and puzzles",
+                "as a beginner programmer I am interested in issues related to programming and technology."],
+        "link-ct": "More about my interests can be found further down this page. Click or scroll further",
+        "hobby1": "Apart from my interests in IT and technology, I am also interested in history. Since 2014 I am an active member of the historical reconstruction group",
+        "hobby2": ["In my free time I also like to watch a good movie or series. The most frequently chosen genres of cinema are: action movies, horror movies",
+                "Science fiction and documentaries. Besides, if the weather permits, I like to rest in the open air, including cycling trips. My hobby is also various kinds of DIY."]
+    },
+    "home":{
+        "hellow": "Hello, I am",
+        "name": "JAREK",
+        "subtitle": "Front end Developer"
+    },
+    "contact": {
+        "title": "Contact",
+        "content": "to text",
+        "form": {
+            "name": "Name / company name",
+            "email": "Email",
+            "msg": "Message",
+            "send": "Send"
+        }
+    },
+    "error": {
+        "req": "Required field",
+        "write-msg": "Write a message",
+        "send": "There was a sending error",
+        "email-req": "Email address required",
+        "error-email": "Invalid email address",
+        "error-form": "Please enter all data correctly into the form"
+    },
+    "success": {
+        "email": "Message sent"
+    }
+}
