@@ -13,8 +13,19 @@ export class CardProjectContainerComponent implements OnInit {
       image: 'img-goodwire',
       title: 'proj.card.title.goodwire',
       content: 'proj.card.content.goodwire',
-      link: 'http://rekoportal.j.pl/',
-      git: '#',
+      link: 'goodwire.j.pl',
+      gits: [{
+        title:"proj.card.gw-link.backend",
+        url: "https://github.com/jarooo7/GoodWire-backend"
+      },
+      {
+        title:"proj.card.gw-link.frontend",
+        url:"https://github.com/jarooo7/GoodWire"
+      },{
+        title:"proj.card.gw-link.hardware",
+        url:"https://github.com/jarooo7/GoodWire-micro"
+      }
+      ],
       icon: ['angular', 'laravel', 'sass', 'c']
     },
     {
@@ -22,14 +33,14 @@ export class CardProjectContainerComponent implements OnInit {
       title: 'proj.card.title.rekoportal',
       content: 'proj.card.content.rekoportal',
       link: 'http://rekoportal.j.pl/',
-      git: '#',
+      git: 'https://github.com/jarooo7/rekoportal',
       icon: ['angular', 'firebase', 'sass']
     },
     {
       image: 'img-apkrekoportal1',
       title: 'proj.card.title.rekoportal-m',
       content: 'proj.card.content.rekoportal-m',
-      link: 'http://rekoportal.j.pl/',
+      src: '#',
       git: '#',
       icon: ['ionic', 'firebase', 'cordova', 'nodejs']
     },
@@ -37,8 +48,8 @@ export class CardProjectContainerComponent implements OnInit {
       image: 'img-pearpair',
       title: 'proj.card.title.pearpair',
       content: 'proj.card.content.pearpair',
-      link: 'http://rekoportal.j.pl/',
-      git: '#',
+      link: 'http://pp.somee.com/',
+      git: 'https://github.com/jarooo7/portalR',
       icon: ['angular', 'net-core', 'c-sharp']
     },
     {
@@ -46,14 +57,13 @@ export class CardProjectContainerComponent implements OnInit {
       title: 'proj.card.title.gojump',
       content: 'proj.card.content.gojump',
       src: '../../../assets/apps/GoGoJump.apk',
-      git: '#',
+      git: 'https://github.com/jarooo7/gogojumper',
       icon: ['unity', 'c-sharp']
     },
     {
       image: 'img-pokeinvaders',
       title: 'proj.card.title.poke',
       content: 'proj.card.content.poke',
-      link: 'http://rekoportal.j.pl/',
       git: '#',
       icon: ['c-sharp', 'xna']
     },
@@ -68,21 +78,21 @@ export class CardProjectContainerComponent implements OnInit {
       image: 'img-AI1',
       title: 'proj.card.title.ai1',
       content: 'proj.card.content.ai1',
-      git: 'https://github.com/jarooo7/Astar',
+      git: '#',
       icon: ['c']
     },
     {
       image: 'img-AI3',
       title: 'proj.card.title.ai3',
       content: 'proj.card.content.ai3',
-      git: 'https://github.com/jarooo7/Astar',
+      git: '#',
       icon: ['c']
     },
     {
       image: 'img-AI2',
       title: 'proj.card.title.ai2',
       content: 'proj.card.content.ai2',
-      git: 'https://github.com/jarooo7/Astar',
+      git: '#',
       icon: ['c']
     },
 

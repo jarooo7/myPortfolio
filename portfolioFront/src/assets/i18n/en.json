@@ -9,6 +9,11 @@
     "proj": {
         "title": "My projects",
         "card": {
+            "gw-link": {
+                "backend": "Back-end",
+                "frontend": "Front-end",
+                "hardware": "Controller program"
+            },
             "title": {
                 "rekoportal": "RekoPortal",
                 "rekoportal-m": "RekoPortal for Android",

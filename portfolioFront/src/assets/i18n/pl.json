@@ -9,6 +9,11 @@
     "proj":{
         "title":"Moje projekty",
         "card":{
+            "gw-link":{
+                "backend":"Back-end",
+                "frontend":"Front-end",
+                "hardware":"Program sterownika"
+            },
             "title":{
                 "rekoportal":"RekoPortal",
                 "rekoportal-m":"RekoPortal na Androida",

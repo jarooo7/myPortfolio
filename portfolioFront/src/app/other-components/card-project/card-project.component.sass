@@ -165,3 +165,28 @@ img
   height: 22px
   margin-left: 3px
   margin-right: 3px
+
+.dropup
+  position: relative
+  display: inline-block
+
+.dropup-content
+  display: none
+  position: absolute
+  background-color: #f1f1f1
+  min-width: 100px
+  left: -20%
+  bottom: 50px
+  z-index: 1
+
+  a
+    color: black
+    padding: 12px 16px
+    text-decoration: none
+    display: block
+
+    &:hover
+      background-color: #ccc
+
+.dropup:hover .dropup-content
+  display: block
